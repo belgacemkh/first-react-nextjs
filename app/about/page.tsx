@@ -2,16 +2,16 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
+function About() {
+    return (
+        <main className={styles.main}>
       <div className={styles.description}>
         <p>
           Belgacem Khadher's first react node js project
         </p>
-        <h1>Page home</h1>
+        <h1>Page about</h1>
         <div>
-        <Link href="/about">Go to about</Link>
+        <Link href="/">Go to home</Link>
         </div>
       </div>
 
@@ -27,5 +27,9 @@ export default function Home() {
       </div>
       
     </main>
-  );
+        
+       
+    );
 }
+  export default About;
+  
